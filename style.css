@@ -1,0 +1,2815 @@
+@charset "UTF-8";
+@media screen and (min-width: 1000px) {
+body {
+    width: 1000px;
+}
+
+ /*  header   */ 
+.headerWrap {
+    height: auto;
+    position: relative;
+}
+
+.headerWrap .header {
+    background-color: black;
+    height: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.headerWrap .header h1 {
+    color: #fff;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+
+.topImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pc {
+    display: block;
+    text-align: center;
+}
+
+.sp {
+    display: none;
+}
+
+.topcontWrap {
+    background-color: black;
+    text-align: center;
+}
+
+.topcontWrap p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.wrapBlock {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.wrapBlock a {
+    display: inline-block;
+    padding: 24px 0;
+    background-color: #c8151d;
+    border: 3px solid #c8151d;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    box-sizing: border-box;
+    flex-direction: column;
+    animation-duration: 1s; 
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    width: 45%;
+    margin: 0px 20px;
+}
+.wrapBlock a:hover {
+    color: #c8151d;
+    background-color: #fff;
+    border: 3px solid #c8151d;
+}
+
+.wrapBlock span {
+    margin-right: 0;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50%{
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+.mainMenu {
+    width: auto;
+    margin: 20px auto;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.button {
+    display: none;
+}
+
+.mainMenu {
+    width: 1000px;
+    margin: 20px auto;
+    display: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    visibility: hidden;
+    transition: .3s;
+    border-radius: 20px;
+}
+  
+  /*このクラスが付与されると表示する*/
+.active{
+    display: block;
+    visibility: visible;
+}
+
+.gNavi {
+    display: flex;
+    height: 52px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.gNavi li {
+    text-align: center;
+    width: 20%;
+    padding: 5px 0;
+}
+
+.gNavi li:hover {
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+}
+
+.gNavi li a {
+    font-weight: bold;
+    
+}
+
+.gNavi li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+ /*  intro   */ 
+.mainContentWrap .introBlock {
+    background-image: url(../images/tr-partner-img2.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 30px;
+}
+
+.aboutCatch {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutTextBlock p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.introImageBlock {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.introImageBlock img {
+    width: 120px;
+}
+
+.introImageBlock p {
+    font-size: 15px;
+    padding: 10px 0px 5px 0px;
+}
+
+ /*  strength   */ 
+.strengthsBlock {
+    padding: 30px 0px;
+}
+
+.contentTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contTitle {
+    font-weight: bold;
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.contsubTitle {
+    color: #c8151d;
+}
+
+.strengthsWrap li {
+    display: inline-block;
+}
+
+.strengthsWrap li img {
+    width: 280px;
+    margin: 20px 10px 20px 10px;
+}
+
+.contsBox {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.strengthsWrap {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+}
+
+ /*  commodity   */ 
+.commodityBlock {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.commodityWrap {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.commodityWrap li {
+    display: inline-block;
+    width: 180px;
+}
+
+.commodityWrap img {
+    width: 180px;
+}
+
+.commodityText {
+    font-size: 18px;
+    text-align: center;
+}
+
+.fadeIn_left {
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+  }
+  
+  .fadeIn_left.is-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.fadeIn_spin {
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.2s;
+  }
+  
+  .fadeIn_spin.is-show {
+transform:rotateY(1turn);
+    opacity: 1;
+}
+
+ /*  reason   */ 
+.reasonBlock {
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+}
+
+.reasonWrap {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.reasonWrap li {
+    display: inline-block;
+}
+
+.reasonWrap li img {
+    margin: 50px 10px 0px 10px;
+    width: 290px;
+}
+
+.br::after {
+    content: "\A" ;
+    white-space: pre;
+}
+
+.reasonTextBlock p {
+    font-size: 18px;
+    text-align: center;
+}
+
+ /*  voice   */ 
+.voiceBlock {
+    padding: 30px 0px;
+}
+
+.contColumnBlock p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.contColumnBlock {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.voiceWrap {
+    border: 2px solid #c8151d;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.voiceImageBlock {
+    width: 20%;
+    float: left;
+}
+
+.voiceImageBlock img {
+    width: 200px;
+}
+
+.voiceMainBlock h2 {
+    color: #c8151d;
+    font-size: 30px;
+    border-bottom: 1px dotted #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.voiceMainBlock {
+    width: 75%;
+    float: right;
+}
+
+.voiceStaBlock {
+    border-bottom: 1px dotted #000;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+}
+
+.statusTag {
+    background-color: #c8151d;
+    width: 140px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+    line-height: 1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.voiceStaBlock p {
+    margin-bottom: 10px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.voiceTextBlock p {
+    margin-bottom: 10px;
+}
+
+ /*  flow   */ 
+.flowBlock {
+    padding: 30px 0px;
+    background-color: #f2f2f2;
+}
+
+.listSlide {
+    opacity: 1;
+    width: 300px;
+    text-align: center;
+    float: left;
+}
+
+.listSlide img {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.flowTitle {
+    color: #c8151d;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.listSlide span {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.flowText {
+    width: 50%;
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+}
+
+ /*  contact   */ 
+
+.contactBlock {
+    padding: 80px 0px;
+}
+
+dt {
+    float: left;
+    color: #fff;
+    background-color: #c8151d;
+    height: 50px;
+    font-weight: normal;
+    padding: 10px;
+    width: 40%;
+    line-height: 28px;
+}
+
+dt label {
+    font-size: 14px;
+}
+
+dd input {
+    width: 60%;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 2px solid #c8151d ;
+    margin-bottom: 16px;
+}
+
+dd textarea {
+    width: 100%;
+    height: 330px;
+    border: 2px solid #c8151d;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.formTop {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.formBottom {
+    width: 48%;
+    float: right;
+}
+
+.formBottom dt {
+    color: #fff;
+    background-color: #c8151d;
+    width: 100%;
+    height: 50px;
+    line-height: 28px;
+    padding: 10px;
+}
+
+.formBlock {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contentBlock .flowBlock .contsBox .flowBlock .slick-dots li button:before {
+    font-size: 20px;
+}
+
+.listSlide {
+    opacity: 0.1;
+}
+
+.slick-center {
+    opacity: 1;
+}
+
+.personInfo {
+    background-color: rgba(0, 0, 0, .05);
+    margin-top: 2em;
+    padding: 2.5em 2.5% 2em;
+}
+
+.personInfo-content {
+    background-color: rgba(0, 0, 0, .075);
+    height: 200px;
+    margin-top: 1.5em;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 2em 2.5%;
+}
+
+.personInfo h3 {
+    font-size: 16px;
+    padding: 16px 0px;
+    font-weight: bold;
+}
+
+.personInfo-note__desc p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.personInfo-content__caption {
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.personInfo-content h5 {
+    font-size: 14px;
+    padding: 11px 0px 7px 0px;
+    font-weight: bold;
+}
+
+.personInfo-content p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.personInfo-agree-block {
+    font-weight: bold;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.accept--required {
+    color: #c8151d;
+}
+
+.formNotes {
+    padding: 20px 0px 80px 0px;
+}
+
+.formNotesGuide {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.formSubmit input {
+    width: 500px;
+    border: none;
+    background-color: #c8151d;
+    border: 2px solid #c8151d;
+    color: #fff;
+    padding: 10px 20px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formSubmitBtn {
+    text-align: center;
+}
+
+.formSubmitBtn input:hover {
+    color: #c8151d;
+    background-color: #fff;
+    border: 3px solid #c8151d;
+}
+
+ /*  footer   */ 
+.footerWrap {
+    background-color: #000;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footerLogo {
+    margin-bottom: 20px;
+}
+
+.footerLogo img {
+    width: 120px;
+}
+
+.footerLogo p {
+    font-size: 14px;
+    margin: 10px 0px 5px 0px;
+}
+
+.footerWrap p {
+    color: #f2f2f2;
+}
+
+.footerComp {
+    margin-bottom: 30px;
+}
+
+.footerComp p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.privary-policy__link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.privary-policy {
+    padding-bottom: 32px;
+}
+
+.footerComp .fc-link a {
+    width: 300px;
+    border: 2px solid #c8151d;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    background-color: #c8151d;
+}
+
+.fc-link a:hover {
+    color: #c8151d;
+    background-color: #fff;
+}
+
+.footer-br {
+    white-space: pre;
+    margin-right: 10px;
+}
+
+.footerMenu {
+    margin: 100px 0px;
+    display: block;
+}
+
+.footerNavi {
+    display: flex;
+    height: 52px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.footerNavi li {
+    text-align: center;
+    width: 20%;
+    padding: 5px 0;
+    color: #fff;
+}
+
+.footerNavi li:hover {
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+}
+
+.footerNavi li a {
+    font-weight: bold;
+    
+}
+
+.footerNavi li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* アニメーションスタートの遅延時間を決めるCSS*/
+.delay-time02 {
+    animation-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.delay-time04 {
+    transition-delay: 0.4s;
+}
+
+.delay-time06 {
+    transition-delay: 0.6s;
+}
+
+.delay-time08 {
+    transition-delay: 0.8s;
+}
+
+.delay-time10 {
+    transition-delay: 1.0s;
+}
+
+.delay-time12 {
+    transition-delay: 1.2s;
+}
+
+.delay-time14 {
+    transition-delay: 1.4s;
+}
+
+.delay-time16 {
+    transition-delay: 1.6s;
+}
+
+.delay-time18 {
+    transition-delay: 1.8s;
+}
+}
+@media screen and (max-width: 999px) {
+	/* 999px以下に適用されるCSS（タブレット用） */
+    .body {
+        width: 999px;
+    }
+
+     /*  header   */ 
+.headerWrap {
+    height: auto;
+    position: relative;
+}
+
+.headerWrap .header {
+    background-color: black;
+    height: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.headerWrap .header h1 {
+    color: #fff;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.topImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pc {
+    display: block;
+    text-align: center;
+}
+
+.sp {
+    display: none;
+}
+
+.topcontWrap {
+    background-color: black;
+    text-align: center;
+}
+
+.topcontWrap p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.wrapBlock {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.wrapBlock a {
+    display: inline-block;
+    padding: 24px 0;
+    background-color: #c8151d;
+    border: 3px solid #c8151d;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    box-sizing: border-box;
+    flex-direction: column;
+    animation-duration: 1s; 
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    width: 45%;
+    margin: 0px 20px;
+}
+.wrapBlock a:hover {
+    color: #c8151d;
+    background-color: #fff;
+    border: 3px solid #c8151d;
+}
+
+.wrapBlock span {
+    margin-right: 0;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+br {
+    display: none;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50%{
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+.mainMenu {
+    width: auto;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.button {
+    display: none;
+}
+
+
+.mainMenu {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: rgba(0,0,0,0.9);
+    transition: all 0.5s;/*アニメーション設定*/
+}
+  
+  /*このクラスが付与されると表示する*/
+.active{
+    display: block;
+    visibility: visible;
+}
+
+.gNavi {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.gNavi li {
+    text-align: center;
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+.gNavi li:hover {
+    color: #c8151d;
+}
+
+.gNavi li a {
+    font-weight: bold;
+    
+}
+
+.gNavi li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+ /*  intro   */ 
+.mainContentWrap .introBlock {
+    background-image: url(../images/tr-partner-img2.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 30px;
+}
+
+.aboutCatch {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutTextBlock p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.introImageBlock {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.introImageBlock img {
+    width: 120px;
+}
+
+.introImageBlock p {
+    font-size: 15px;
+    padding: 10px 0px 5px 0px;
+}
+
+ /*  strength   */ 
+.strengthsBlock {
+    padding: 30px 0px;
+    text-align: center
+}
+
+.contentTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contTitle {
+    font-weight: bold;
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.contsubTitle {
+    color: #c8151d;
+}
+
+.strengthsWrap li {
+    display: inline-block;
+    width: 360px;
+}
+
+.strengthsWrap li img {
+    width: 100%;
+    margin: 20px 10px 20px 10px;
+}
+
+.contsBox {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.strengthsWrap {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+}
+
+ /*  commodity   */ 
+.commodityBlock {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.commodityWrap {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.commodityText {
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.commodityWrap li {
+    float: left;
+    margin: 0;
+    width: 50%;
+
+}
+
+.commodityWrap li img {
+    width: 100%;
+}
+
+  .fadeIn_left {
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+  }
+  
+  .fadeIn_left.is-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.fadeIn_spin {
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.2s;
+  }
+  
+  .fadeIn_spin.is-show {
+transform:rotateY(1turn);
+    opacity: 1;
+}
+
+ /*  reason   */ 
+.reasonBlock {
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+}
+
+.reasonWrap {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.reasonWrap li {
+    display: inline-block;
+}
+
+.reasonWrap li img {
+    margin: 50px 10px 0px 10px;
+    width: 290px;
+}
+
+.reasonTextBlock p {
+    font-size: 12px;
+    text-align: left;
+}
+
+ /*  voice   */ 
+.voiceBlock {
+    padding: 30px 0px;
+}
+
+.contColumnBlock p {
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contColumnBlock {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.voiceWrap {
+    border: 2px solid #c8151d;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.voiceImageBlock {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.voiceImageBlock img {
+    width: 140px;
+}
+
+.voiceMainBlock h2 {
+    color: #c8151d;
+    font-size: 30px;
+    border-bottom: 1px dotted #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.voiceMainBlock {
+    width: 100%;
+}
+
+.voiceStaBlock {
+    border-bottom: 1px dotted #000;
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+}
+
+.statusTag {
+    background-color: #c8151d;
+    width: 100%;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+    line-height: 1;
+    border-radius: 5px;
+}
+
+.voiceStaBlock p {
+    line-height: 35px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.voiceTextBlock p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+ /*  flow   */ 
+.flowBlock {
+    padding: 30px 0px;
+    background-color: #f2f2f2;
+}
+
+.listSlide {
+    opacity: 1;
+    width: 300px;
+    text-align: center;
+    float: left;
+}
+
+.listSlide img {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.flowTitle {
+    color: #c8151d;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.listSlide span {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.flowText {
+    width: 50%;
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+}
+
+ /*  contact   */ 
+
+.contactBlock {
+    padding: 80px 0px;
+}
+
+dt {
+    color: #fff;
+    background-color: #c8151d;
+    height: 50px;
+    font-weight: normal;
+    padding: 10px;
+    width: 100%;
+    line-height: 28px;
+}
+
+dt label {
+    font-size: 14px;
+}
+
+dd input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 2px solid #c8151d ;
+    margin-bottom: 16px;
+}
+
+dd textarea {
+    width: 100%;
+    height: 330px;
+    border: 2px solid #c8151d;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.formTop {
+    width: 100%;
+    margin-right: 4%;
+}
+
+.formBottom {
+    width: 100%;
+}
+
+.formBottom dt {
+    color: #fff;
+    background-color: #c8151d;
+    width: 100%;
+    height: 50px;
+    line-height: 28px;
+    padding: 10px;
+}
+
+.formBlock {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contentBlock .flowBlock .contsBox .flowBlock .slick-dots li button:before {
+    font-size: 20px;
+}
+
+.listSlide {
+    opacity: 0.1;
+}
+
+.slick-center {
+    opacity: 1;
+}
+
+.personInfo {
+    background-color: rgba(0, 0, 0, .05);
+    margin-top: 2em;
+    padding: 2.5em 2.5% 2em;
+}
+
+.personInfo-content {
+    background-color: rgba(0, 0, 0, .075);
+    height: 200px;
+    margin-top: 1.5em;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 2em 2.5%;
+}
+
+.personInfo h3 {
+    font-size: 16px;
+    padding: 16px 0px;
+    font-weight: bold;
+}
+
+.personInfo-note__desc p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.personInfo-content__caption {
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.personInfo-content h5 {
+    font-size: 14px;
+    padding: 11px 0px 7px 0px;
+    font-weight: bold;
+}
+
+.personInfo-content p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.personInfo-agree-block {
+    font-weight: bold;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.accept--required {
+    color: #c8151d;
+}
+
+.formNotes {
+    padding: 20px 0px 80px 0px;
+}
+
+.formNotesGuide {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.formSubmit input {
+    width: 100%;
+    border: none;
+    background-color: #c8151d;
+    border: 2px solid #c8151d;
+    color: #fff;
+    padding: 10px 20px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formSubmitBtn {
+    text-align: center;
+}
+
+.formSubmitBtn input:hover {
+    color: #c8151d;
+    background-color: #fff;
+}
+
+ /*  footer   */ 
+.footerWrap {
+    background-color: #000;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footerLogo {
+    margin-bottom: 20px;
+}
+
+.footerLogo img {
+    width: 120px;
+}
+
+.footerLogo p {
+    font-size: 14px;
+    margin: 10px 0px 5px 0px;
+}
+
+.footerWrap p {
+    color: #f2f2f2;
+}
+
+.footerComp {
+    margin-bottom: 30px;
+}
+
+.footerComp p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.privary-policy__link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.privary-policy {
+    padding-bottom: 32px;
+}
+
+.footerComp .fc-link a {
+    width: 100%;
+    border: 2px solid #c8151d;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    background-color: #c8151d;
+}
+
+.fc-link a:hover {
+    color: #c8151d;
+    background-color: #fff;
+}
+
+.footer-br::after {
+    content: "\A" ;
+    white-space: pre;
+}
+
+.fc-staff {
+    display: none;
+}
+
+.footerMenu {
+    margin: 100px 0px;
+    display: block;
+}
+
+.footerNavi {
+    display: flex;
+    height: 52px;
+}
+
+.footerNavi li {
+    text-align: center;
+    width: 20%;
+    padding: 5px 0;
+    color: #fff;
+}
+
+.footerNavi li:hover {
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+}
+
+.footerNavi li a {
+    font-weight: bold;
+}
+
+.footerNavi li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.headerWrap {
+    height: auto;
+    position: relative;
+}
+
+.headerWrap .header {
+    background-color: black;
+    height: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.headerWrap .header h1 {
+    color: #fff;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.topImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.topcontWrap {
+    background-color: black;
+    text-align: center;
+}
+
+.topcontWrap p {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.wrapBlock {
+    width: 100%;
+    padding: 20px;
+}
+
+.wrapBlock a {
+    background-color: #c8151d;
+    border: 3px solid #c8151d;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    flex-direction: column;
+    animation-duration: 1s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    width: 95%;
+    flex-wrap: nowrap;
+}
+
+.wrapBlock a:hover {
+    color: #c8151d;
+    background-color: #fff;
+    border: 3px solid #c8151d;
+}
+
+.wrapBlock span {
+    margin-right: 0;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50%{
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+.menuWrap {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+
+
+.mainMenu {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: 100%;
+    z-index: 80;
+    background-color: rgba(0,0,0,0.9);
+    transition: all 0.5s;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #000;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn {
+    opacity: 0.5;
+}
+
+.mainMenu li a {
+    color: #fff;
+    padding: 10px 0 15px;
+    border-bottom: 2px solid #fff;
+    display: block;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.mainMenu li a:hover {
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainMenu .close a {
+    font-size: 19px;
+    border-bottom: none;
+}
+
+.mainMenu li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 6px;
+}
+
+#menu-btn-check:checked ~ .mainMenu {
+    bottom: 0;/*メニューを画面内へ*/
+}
+
+.pageScrollBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    background-color: #c8151d;
+    display: block;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #c8151d;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    border-radius: 20px;
+}
+  
+  /*このクラスが付与されると表示する*/
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.button {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+    .strengthsBlock {
+        text-align: center;
+    }
+
+    .strengthsWrap {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 100px;
+        position: relative;
+        text-align: center;
+    }
+
+    .strengthsWrap li img {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .reasonWrap {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 100px;
+        position: relative;
+        text-align: center;
+    }
+
+    .footerMenu {
+        display: none;
+    }
+
+    /* アニメーションスタートの遅延時間を決めるCSS*/
+.delay-time02 {
+    animation-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.delay-time04 {
+    transition-delay: 0.4s;
+}
+
+.delay-time06 {
+    transition-delay: 0.6s;
+}
+
+.delay-time08 {
+    transition-delay: 0.8s;
+}
+
+.delay-time10 {
+    transition-delay: 1.0s;
+}
+
+.delay-time12 {
+    transition-delay: 1.2s;
+}
+
+.delay-time14 {
+    transition-delay: 1.4s;
+}
+
+.delay-time16 {
+    transition-delay: 1.6s;
+}
+
+.delay-time18 {
+    transition-delay: 1.8s;
+}
+}
+@media screen and (max-width: 599px) {
+	/* 599px以下に適用されるCSS（スマホ用） */
+
+html {
+    width: 599px;
+}
+
+     /*  header   */ 
+.headerWrap {
+    height: auto;
+    position: relative;
+}
+
+.headerWrap .header {
+    background-color: black;
+    height: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.headerWrap .header h1 {
+    color: #fff;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+
+.topImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pc {
+    display: block;
+    text-align: center;
+}
+
+.sp {
+    display: none;
+}
+
+.topcontWrap {
+    background-color: black;
+    text-align: center;
+}
+
+.topcontWrap p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.wrapBlock {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.wrapBlock a {
+    display: inline-block;
+    padding: 24px 0;
+    background-color: #c8151d;
+    border: 3px solid #c8151d;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    box-sizing: border-box;
+    flex-direction: column;
+    animation-duration: 1s; 
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    width: 45%;
+    margin: 0px 20px;
+}
+.wrapBlock a:hover {
+    color: #c8151d;
+    background-color: #fff;
+    border: 3px solid #c8151d;
+}
+
+.wrapBlock span {
+    margin-right: 0;
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+.br::after {
+    white-space: pre;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50%{
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+.mainMenu {
+    width: auto;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.button {
+    display: none;
+}
+
+
+.mainMenu {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: rgba(0,0,0,0.9);
+    transition: all 0.5s;/*アニメーション設定*/
+}
+  
+  /*このクラスが付与されると表示する*/
+.active{
+    display: block;
+    visibility: visible;
+}
+
+.gNavi {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.gNavi li {
+    text-align: center;
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+.gNavi li:hover {
+    color: #c8151d;
+}
+
+.gNavi li a {
+    font-weight: bold;
+    
+}
+
+.gNavi li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+ /*  intro   */ 
+.mainContentWrap .introBlock {
+    background-image: url(../images/tr-partner-img2.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 30px;
+}
+
+.aboutCatch {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutTextBlock p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.introImageBlock {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.introImageBlock img {
+    width: 120px;
+}
+
+.introImageBlock p {
+    font-size: 15px;
+    padding: 10px 0px 5px 0px;
+}
+
+ /*  strength   */ 
+.strengthsBlock {
+    padding: 30px 0px;
+}
+
+.contentTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contTitle {
+    font-weight: bold;
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.contsubTitle {
+    color: #c8151d;
+}
+
+.strengthsWrap li {
+    display: inline-block;
+}
+
+.strengthsWrap li img {
+    width: 280px;
+    margin: 20px 10px 20px 10px;
+}
+
+.contsBox {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.strengthsWrap {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    text-align: center;
+}
+
+ /*  commodity   */ 
+.commodityBlock {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.commodityWrap {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.commodityWrap li {
+    display: inline-block;
+
+}
+
+.commodityWrap img {
+    width: 180px;
+}
+
+.commodityText {
+    font-size: 12px;
+    text-align: left;
+}
+
+.fadeIn_left {
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+  }
+  
+  .fadeIn_left.is-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.fadeIn_spin {
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.2s;
+  }
+  
+  .fadeIn_spin.is-show {
+transform:rotateY(1turn);
+    opacity: 1;
+}
+
+
+
+ /*  reason   */ 
+.reasonBlock {
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+}
+
+.reasonWrap {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.reasonWrap li {
+    display: inline-block;
+}
+
+.reasonWrap li img {
+    margin: 50px 10px 0px 10px;
+    width: 290px;
+}
+
+.reasonTextBlock p {
+    font-size: 12px;
+    text-align: left;
+}
+
+ /*  voice   */ 
+.voiceBlock {
+    padding: 30px 0px;
+}
+
+.contColumnBlock p {
+    font-size: 12px;
+}
+
+.contColumnBlock {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.voiceWrap {
+    border: 2px solid #c8151d;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.voiceImageBlock {
+    width: 100%;
+}
+
+.voiceImageBlock img {
+    width: 140px;
+}
+
+.voiceMainBlock h2 {
+    color: #c8151d;
+    font-size: 30px;
+    border-bottom: 1px dotted #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.voiceMainBlock {
+    width: 100%;
+}
+
+.voiceStaBlock {
+    border-bottom: 1px dotted #000;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+}
+
+.statusTag {
+    background-color: #c8151d;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+    line-height: 1;
+    border-radius: 5px;
+}
+
+.voiceStaBlock p {
+    line-height: 35px;
+    text-align: left;
+}
+
+.voiceTextBlock p {
+    margin-bottom: 10px;
+}
+
+ /*  flow   */ 
+.flowBlock {
+    padding: 30px 0px;
+    background-color: #f2f2f2;
+}
+
+.listSlide {
+    opacity: 1;
+    width: 300px;
+    text-align: center;
+    float: left;
+}
+
+.listSlide img {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.flowTitle {
+    color: #c8151d;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.listSlide span {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.flowText {
+    width: 50%;
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+}
+
+ /*  contact   */ 
+
+.contactBlock {
+    padding: 30px 0px;
+}
+
+dt {
+    color: #fff;
+    background-color: #c8151d;
+    height: 50px;
+    font-weight: normal;
+    padding: 10px;
+    width: 100%;
+    line-height: 28px;
+}
+
+dt label {
+    font-size: 14px;
+}
+
+dd input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 2px solid #c8151d ;
+    margin-bottom: 16px;
+}
+
+dd textarea {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #c8151d;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.formTop {
+    width: 100%;
+    margin-right: 4%;
+}
+
+.formBottom {
+    width: 100%;
+}
+
+.formBottom dt {
+    color: #fff;
+    background-color: #c8151d;
+    width: 100%;
+    height: 50px;
+    line-height: 28px;
+    padding: 10px;
+}
+
+.formBlock {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contentBlock .flowBlock .contsBox .flowBlock .slick-dots li button:before {
+    font-size: 20px;
+}
+
+.listSlide {
+    opacity: 0.1;
+}
+
+.slick-center {
+    opacity: 1;
+}
+
+.personInfo {
+    background-color: rgba(0, 0, 0, .05);
+    margin-top: 2em;
+    padding: 2.5em 2.5% 2em;
+}
+
+.personInfo-content {
+    background-color: rgba(0, 0, 0, .075);
+    height: 200px;
+    margin-top: 1.5em;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 2em 2.5%;
+}
+
+.personInfo h3 {
+    font-size: 16px;
+    padding: 16px 0px;
+    font-weight: bold;
+}
+
+.personInfo-note__desc p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.personInfo-content__caption {
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.personInfo-content h5 {
+    font-size: 14px;
+    padding: 11px 0px 7px 0px;
+    font-weight: bold;
+}
+
+.personInfo-content p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.personInfo-agree-block {
+    font-weight: bold;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.accept--required {
+    color: #c8151d;
+}
+
+.formNotes {
+    padding: 20px 0px 80px 0px;
+}
+
+.formNotesGuide {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.formSubmit input {
+    width: 100%;
+    border: none;
+    background-color: #c8151d;
+    border: 2px solid #c8151d;
+    color: #fff;
+    padding: 10px 20px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formSubmitBtn {
+    text-align: center;
+}
+
+.formSubmitBtn input:hover {
+    color: #c8151d;
+    background-color: #fff;
+}
+
+ /*  footer   */ 
+.footerWrap {
+    background-color: #000;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footerLogo {
+    margin-bottom: 20px;
+}
+
+.footerLogo img {
+    width: 120px;
+}
+
+.footerLogo p {
+    font-size: 14px;
+    margin: 10px 0px 5px 0px;
+}
+
+.footerWrap p {
+    color: #f2f2f2;
+}
+
+.footerComp {
+    margin-bottom: 30px;
+}
+
+.footerComp p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.privary-policy__link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.privary-policy {
+    padding-bottom: 32px;
+}
+
+.footerComp .fc-link a {
+    width: 100%;
+    border: 2px solid #c8151d;
+    margin: 30px auto 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    background-color: #c8151d;
+}
+
+.fc-link a:hover {
+    color: #c8151d;
+    background-color: #fff;
+}
+.footer-br {
+    white-space: pre;
+}
+
+.footerMenu {
+    display: none;
+}
+
+.footerNavi {
+    display: flex;
+    height: 52px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.footerNavi li {
+    text-align: center;
+    width: 20%;
+    padding: 5px 0;
+    color: #fff;
+}
+
+.footerNavi li:hover {
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+}
+
+.footerNavi li a {
+    font-weight: bold;
+    
+}
+
+.footerNavi li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+    /* アニメーションスタートの遅延時間を決めるCSS*/
+    .delay-time02 {
+        animation-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+    
+    .delay-time04 {
+        transition-delay: 0.4s;
+    }
+    
+    .delay-time06 {
+        transition-delay: 0.6s;
+    }
+    
+    .delay-time08 {
+        transition-delay: 0.8s;
+    }
+    
+    .delay-time10 {
+        transition-delay: 1.0s;
+    }
+    
+    .delay-time12 {
+        transition-delay: 1.2s;
+    }
+    
+    .delay-time14 {
+        transition-delay: 1.4s;
+    }
+    
+    .delay-time16 {
+        transition-delay: 1.6s;
+    }
+    
+    .delay-time18 {
+        transition-delay: 1.8s;
+    }
+
+    .mainWrap {
+        width: 100%;
+    }
+
+    .topImage img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .pc {
+        display: none;
+    }
+    
+    .sp {
+        display: block;
+    }
+.headerWrap {
+    height: auto;
+    position: relative;
+}
+
+.headerWrap .header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.headerWrap .header h1 {
+    color: #fff;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+
+.topImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.topcontWrap {
+    background-color: black;
+    text-align: center;
+}
+
+.topcontWrap p {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.wrapBlock {
+
+    padding: 20px;
+}
+
+.wrapBlock a {
+    background-color: #c8151d;
+    border: 3px solid #c8151d;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    flex-direction: column;
+    animation-duration: 1s; 
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    width: 530px;
+}
+
+.wrapBlock a:hover {
+    color: #c8151d;
+    background-color: #fff;
+    border: 3px solid #c8151d;
+}
+
+.wrapBlock span {
+    margin-right: 0;
+    display: inline-block;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50%{
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+}
+
+.menuWrap {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+
+
+.mainMenu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: rgba(0,0,0,0.9);
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #000;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn {
+    opacity: 0.5;
+}
+
+.mainMenu li {
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mainMenu li a {
+    color: #fff;
+    padding: 10px 0 15px;
+    border-bottom: 2px solid #fff;
+    display: block;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.mainMenu li a:hover {
+    color: #c8151d;
+    border-bottom: 2px solid #c8151d;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainMenu .close a {
+    font-size: 19px;
+    border-bottom: none;
+}
+
+.mainMenu li a span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 6px;
+}
+
+#menu-btn-check:checked ~ .mainMenu {
+    bottom: 0;/*メニューを画面内へ*/
+}
+
+.pageScrollBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    background-color: #c8151d;
+    display: block;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #c8151d;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    border-radius: 20px;
+}
+  
+  /*このクラスが付与されると表示する*/
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.button {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+    .strengthsBlock {
+        text-align: center;
+    }
+
+    .strengthsWrap li {
+        display: inline-block;
+        
+    }
+
+    .commodityWrap {
+        width: 100%;
+        margin-bottom: 50px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .commodityWrap li {
+        display: inline-block;
+    }
+    
+
+     /* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '〈';
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '〉';
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.slick-next
+{
+    right: -5px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '〉';
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '〈';
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+}
+}
